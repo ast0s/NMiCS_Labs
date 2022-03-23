@@ -19,7 +19,7 @@ namespace NMiCS_Labs.Tools
         {
             List<Equation> equations = new List<Equation>();
             List<double> roots = new List<double>();
-            RecursiveDivideIntoSegments(eq, ref equations, ref roots, 10 * (int)Math.Abs(eq.Max - eq.Min), false);
+            RecursiveDivideIntoSegments(eq, ref equations, ref roots, 100, false);
             return (equations, roots);
         }
         private void RecursiveDivideIntoSegments(
