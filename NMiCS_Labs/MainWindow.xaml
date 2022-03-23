@@ -1,0 +1,28 @@
+﻿<Window x:Class="NMiCS_Labs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NMiCS_Labs"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="575" Width="500">
+    <Grid>
+        <Label Content="Введіть вираз:" HorizontalAlignment="Left" Height="35" Margin="34,40,0,0" VerticalAlignment="Top" Width="145" FontSize="20"/>
+        <Label Content="Введіть діапазон:" HorizontalAlignment="Left" Height="35" Margin="34,94,0,0" VerticalAlignment="Top" Width="171" FontSize="20"/>
+        <Label Content="Введіть точність розв'язку:" HorizontalAlignment="Left" Height="35" Margin="34,145,0,0" VerticalAlignment="Top" Width="254" FontSize="20"/>
+        <Label Content="від" HorizontalAlignment="Left" Height="35" Margin="210,94,0,0" VerticalAlignment="Top" Width="37" FontSize="20"/>
+        <Label Content="до" HorizontalAlignment="Left" Height="35" Margin="352,94,0,0" VerticalAlignment="Top" Width="33" FontSize="20"/>
+        <TextBox Name="ExpressionTextBox" HorizontalAlignment="Left" Height="35" Margin="184,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" FontSize="20" RenderTransformOrigin="2.222,0.583"/>
+        <TextBox Name="BeginRangeTextBox" HorizontalAlignment="Left" Height="35" Width="70" Margin="255,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.222,0.583"/>
+        <TextBox Name="EndRangeTextBox" HorizontalAlignment="Left" Height="35" Width="70" Margin="390,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.222,0.583"/>
+        <TextBox x:Name="EpsilonTextBox" HorizontalAlignment="Left" Height="35" Width="139" Margin="321,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.222,0.583"/>
+        <Button x:Name ="FindRootsButton" Content="Знайти корені" HorizontalAlignment="Left" Height="45" Margin="150,210,0,0" VerticalAlignment="Top" Width="200" FontSize="24" Click="FindRootsButton_Click" RenderTransformOrigin="0.504,1.8"/>
+        <ListView x:Name="ResultList" HorizontalAlignment="Left" Height="200" Margin="100,300,0,0" VerticalAlignment="Top" Width="300" FontSize="20">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
